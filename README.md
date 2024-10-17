@@ -65,41 +65,6 @@ Trivy***
 
 **Set up Jenkins Pipeline**
 ***Create a file and name it Jenkinsfile***
-pipeline {
-    agent any
-    environment {
-        ACR_REPO_URI = 'myacr.azurecr.io/t2s-services-repo'
-    }
-    stages {
-        stage('Build') {
-            steps {
-                script {
-                    docker.build("$ACR_REPO_URI:$BUILD_NUMBER")
-                }
-            }
-        }
-        stage('Push to ACR') {
-            steps {
-                script {
-                    withAzureRegistryCredentials() {
-                        sh "az acr login --name myacr"
-                        docker.image("$ACR_REPO_URI:$BUILD_NUMBER").push()
-                    }
-                }
-            }
-        }
-        stage('Deploy to Kubernetes') {
-            steps {
-                script {
-                    kubernetesDeploy(
-                        configs: 'k8s/deployment.yaml',
-                        kubeconfigId: 'kubeconfig'
-                    )
-                }
-            }
-        }
-    }
-}
 
 ### Step 9: Taint each node
 
