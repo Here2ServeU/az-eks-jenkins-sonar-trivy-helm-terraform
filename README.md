@@ -45,10 +45,9 @@
 * kubectl get svc --namespace default -w jenkins
 
 ***The output will be something like this:
-##### a8cc903b184cb4e908a01a07f7748594-416424995.azure.com.
-##### Paste it on the browser: a8cc903b184cb4e908a01a07f7748594-416424995.azure.com:8080.
-
-***For Username: Admin; For Password: Use the command above to retrieve the password***
+####### a8cc903b184cb4e908a01a07f7748594-416424995.azure.com.
+####### Paste it on the browser: a8cc903b184cb4e908a01a07f7748594-416424995.azure.com:8080.
+####### For Username: Admin; For Password: Use the command above to retrieve the password
 
 ### Step 7: Install Plugins
 ***Docker Pipeline
