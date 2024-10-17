@@ -65,7 +65,6 @@ Trivy***
 
 **Set up Jenkins Pipeline**
 ***Create a file and name it Jenkinsfile***
-
 pipeline {
     agent any
     environment {
