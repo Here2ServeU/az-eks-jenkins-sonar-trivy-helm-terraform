@@ -9,7 +9,7 @@
 **Install Azure CLI**
 * curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-### Step 1: Create AKS Cluster
+#### Step 1: Create AKS Cluster
 **Use Terraform configuration files to create the AKS cluster.**
 * cd aks-cluster
 * Change variables in the terraform.tfvars file
