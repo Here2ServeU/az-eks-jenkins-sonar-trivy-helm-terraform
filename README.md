@@ -1,13 +1,10 @@
 #### Tools to Install:
 
-	•	Azure CLI: To install and configure Azure CLI, go to https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
-	•	AKS (Azure Kubernetes Service): No specific tool needed, but you’ll be working with az commands to manage AKS.
-	•	KUBECTL: To install KUBECTL, go to https://kubernetes.io/docs/tasks/tools/
-	•	HELM: To install Helm, go to https://helm.sh/docs/intro/install/
-
-#### Prerequisites
-**Install Azure CLI**
-* curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+* Azure CLI: To install and configure Azure CLI, go to https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+* AKS (Azure Kubernetes Service): No specific tool is needed, but you’ll work with az commands to manage AKS.
+* KUBECTL: To install KUBECTL, go to https://kubernetes.io/docs/tasks/tools/
+* HELM: To install Helm, go to https://helm.sh/docs/intro/install/
+* curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash  # To Install Azure CLI
 
 #### Step 1: Create AKS Cluster
 **Use Terraform configuration files to create the AKS cluster.**
@@ -27,7 +24,7 @@
 * kubectl create ns jenkins  # To create a namespace
 
 #### Step 4: Installing Helm on Local Machine
-* brew install helm   # This is when using macOS. Use the official Helm Documentation in case you use a different OS. 
+* brew install helm   # This is when using macOS. Use the official Helm Documentation if you use a different OS. 
 * helm version
 
 #### Step 5: Install and Configure Jenkins for CI/CD
